@@ -12,7 +12,7 @@
 		<link href="images/ico/favicon.ico" rel="icon" type="image/x-icon">
 		
 		<!-- Site Title  -->
-		<title>PromoGK</title>
+		<title>Geekoders | Promoción sitio web</title>
 
 		<!-- Bootstrap core CSS -->
 		<link rel="stylesheet" href="assets/css/bootstrap.css" >
@@ -352,7 +352,7 @@
 								<div class="col-md-3"></div>
 								<div class="col-md-6">
 									<h3>Contáctanos!</h3>
-									<p>Envianos tus contactos o escribenos a info@geekoders.com</p>
+									<p>Envianos tus contactos o escribenos a <a href="mailto:info@geekoders" style="color : inherit;">info@geekoders.com</a></p>
 								</div>
 								<div class="col-md-2"></div>
 							</div>
@@ -361,18 +361,54 @@
 							<div class="col-md-3 col-sm-2"></div>
 							<div class="col-md-6 col-sm-8">
 								<div class="form">
-									<form action="sendmail.php" id="contactform" class="contact-form text-center" role="form">
+									<form action="mailer.php" id="contactform" class="contact-form text-center" role="form">
+										<!-- MEANWHILE-->
+										<div class="alert alert-info info" role="alert">
+											
+											<h6>
+												<span class="olored-text icon_check">
+												</span> 
+												<span class="msg">
+													Enviando mensaje.	
+												</span>
+											</h6>
+
+										</div>
+
 										<!-- IF MAIL SENT SUCCESSFULLY -->
-										<h6 class="success">
-										<span class="olored-text icon_check"></span> Pronto te contactaremos.</h6>
+										<div class="alert alert-success success" role="alert">
+											
+											<h6>
+												<span class="olored-text icon_check">
+												</span> 
+												<span class="msg">
+													Mensaje enviado con exito, <br>
+													Pronto te contactaremos.
+												</span>
+												
+											</h6>
+
+										</div>
+						
 
 										<!-- IF MAIL SENDING UNSUCCESSFULL -->
-										<h6 class="error">
-										<span class="colored-text icon_error-circle_alt"></span> correo invalido.</h6>								
-										<input id="cf-name" type="text" name="cf-name" placeholder="Nombre">
-										<input id="cf-email" type="email" name="cf-email" placeholder="Email">
-										<input id="cf-phone" type="text" name="cf-phone" placeholder="Teléfono">
-										<input type="submit" class="button red" value="Reservar!" id="submit" name="submit" data-style="expand-left"/>
+										<div class="alert alert-danger danger error" role="alert">
+																					
+											<h6>
+												<span class="colored-text icon_error-circle_alt">
+													
+												</span> 
+												correo invalido.
+											</h6>										
+
+										</div>
+
+										
+										<input id="cf-name" type="text" name="name" placeholder="Nombre">
+										<input id="cf-email" type="email" name="email" placeholder="Email">
+										<input id="cf-phone" type="text" name="phone" placeholder="Teléfono">
+										<textarea id="cf-comment" name="comment" placeholder="Comentanos ..."></textarea>
+										<input type="submit" class="button red cf-button" value="Reservar!" id="submit" name="submit" data-style="expand-left"/>
 									</form>
 								</div>
 							</div>
@@ -406,7 +442,10 @@
 					<div class="col-md-4">
 						<img src="images/marker.png" alt="marker" />
 						<h6>Mayor informacion</h6>
-						<p>info@geekoders.com<br /></p>
+						<a href="mailto:info@geekoders.com" style="color:white !important;">
+							<p>info@geekoders.com<br /></p>	
+						</a>
+						
 						
 
 
@@ -428,7 +467,7 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-md-12">
-						<p>All rights reserved Copyright © 2015 by <a href="">Geekoders</a></p>
+						<p>All rights reserved Copyright © 2015 by <a href="geekoders.com">Geekoders</a></p>
 					</div>
 				</div>
 			</div>
